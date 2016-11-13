@@ -9,18 +9,14 @@ const angular = require('angular');
 const ngRoute = require('angular-route');
 
 // angular modules
-angular.module('demoApp', [ngRoute])
+angular.module('cortFolio', [ngRoute])
 .config(['$routeProvider', function($routeProvider){
   $routeProvider
-  .when('/signup', {
-    template: require('./view/signup/signup.html'),
-    controller: 'SignupController',
-    controllerAs: 'signupCtrl',
+  .when('/about', {
+    template: require('./view/about/about.html'),
   })
-  .when('/signin', {
-    template: require('./view/signin/signin.html'),
-    controller: 'SigninController',
-    controllerAs: 'signinCtrl',
+  .when('/projects', {
+    template: require('./view/projects/projects.html'),
   })
   .when('/home', {
     template: require('./view/home/home.html'),
@@ -28,14 +24,11 @@ angular.module('demoApp', [ngRoute])
     controllerAs: 'homeCtrl',
   })
   .otherwise({
-    redirectTo: '/signin',
+    redirectTo: '/home',
   });
 }]);
 
-// angular services
-require('./service/auth-service');
-
 // angular controllers
-require('./view/signup');
-require('./view/signin');
+require('./view/about');
+require('./view/projects');
 require('./view/home');
