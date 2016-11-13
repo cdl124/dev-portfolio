@@ -12,10 +12,11 @@ html, body {
 }
 
 body {
-  background-color: $app-default;
+  background-image: url(../asset/img/damask-wall.jpg);
+  background-repeat: repeat;
 }
 
-// i got this from animate.css 
+// i got this from animate.css
 // https://github.com/daneden/animate.css/blob/master/source/attention_seekers/jello.css
 @keyframes jello {
   from, 11.1%, to {
@@ -61,4 +62,19 @@ body {
 .red-col {
   color: red;
   background-color: red;
+}
+
+main, .app-home, .app-about, .app-projects {
+  
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+
+  div {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255,255,255,0.9);
+  }
 }
