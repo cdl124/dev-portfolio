@@ -1,18 +1,29 @@
 @import '_theme';
 
 .app-nav {
-  display: inline-block;
+  display: block;
   width: 100%;
-  // background-color: $app-background;
-  border-bottom: 2px solid $app-default;
+  background-color: $app-light;
+  // border-bottom: 2px solid $app-default;
+  box-shadow: 0px 7px 10px -2px rgba(0,0,0,0.6);
 
 // temporary logo
-  h1 {
+  .logo {
     display: inline;
-    text-align: center;
+    height: 10em;
+
+    a {
+      text-decoration: none;
+    }
   }
 
   ul {
     display: inline-block;
+    margin-left: 20%;
+
+    li {
+      display: inline;
+      margin-left: 2em;
+    }
   }
 }
