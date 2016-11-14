@@ -1,33 +1,53 @@
 @import '_theme';
 
 .app-nav {
-  display: block;
   width: 100%;
   background-color: $app-light;
   box-shadow: 0px 7px 10px -2px rgba(0,0,0,0.6);
 
-  .logo {
-    display: inline;
-    height: 10em;
+  .logo-and-ham {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    .logo {
+      width: 50%;
+    }
+  }
+
+  .logo-and-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    .logo {
+      height: 8em;
+    }
+    ul {
+      display: inline;
+
+      li {
+        display: inline;
+        margin: 1em;
+        font-size: 2em;
+      }
+    }
+  }
 
     a {
       text-decoration: none;
     }
-  }
 
-  ul {
-    display: inline-block;
-    margin-left: 20%;
-
-    li {
-      display: inline;
-      margin-left: 2em;
-    }
-  }
 }
 
 @media (max-width: 460px) {
-  ul * {
+  .logo-and-list * {
+    display: none;
+  }
+}
+
+@media (min-width: 461px) {
+  .logo-and-ham * {
     display: none;
   }
 }
