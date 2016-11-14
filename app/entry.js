@@ -27,7 +27,8 @@ angular.module('cortFolio', [ngRoute])
 }]);
 
 // angular controllers
+require('./component/app-nav');
+require('./component/app-ham');
 require('./view/about');
 require('./view/projects');
 require('./view/home');
-require('./component/app-nav');

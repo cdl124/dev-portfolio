@@ -1,0 +1,17 @@
+@import '_theme';
+
+.app-ham {
+  display: inline;
+  color: $app-dark;
+  height: 10em;
+
+  :before {
+    display: inline;
+  }
+}
+
+@media (min-width: 460px) {
+  app-ham {
+    display: none;
+  }
+}
