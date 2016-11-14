@@ -30,3 +30,4 @@ angular.module('cortFolio', [ngRoute])
 require('./view/about');
 require('./view/projects');
 require('./view/home');
+require('./component/app-nav');

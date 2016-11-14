@@ -1,0 +1,18 @@
+@import '_theme';
+
+.app-nav {
+  display: inline-block;
+  width: 100%;
+  // background-color: $app-background;
+  border-bottom: 2px solid $app-default;
+
+// temporary logo
+  h1 {
+    display: inline;
+    text-align: center;
+  }
+
+  ul {
+    display: inline-block;
+  }
+}
