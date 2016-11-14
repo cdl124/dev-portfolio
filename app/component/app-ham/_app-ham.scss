@@ -1,0 +1,30 @@
+@import '_theme';
+
+.app-ham {
+
+  .fa-bars {
+    position: absolute;
+    z-index: 100;
+    font-size: 5em;
+  }
+
+  .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: $app-light;
+
+    ul {
+      margin-top: 50%;
+      text-align: center;
+      list-style-type: none;
+
+      li {
+        font-size: 2em;
+        padding: 3em;
+      }
+    }
+  }
+}

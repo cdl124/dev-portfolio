@@ -6,4 +6,6 @@ Languages utilized are JavaScript, HTML5, and CSS3.
 
 Please check out my [LinkedIn](http://www.linkedin.com/in/cortneydrummond) as well.
 
+The lovely damask wallpaper is courtesy of [all-free-download.com](http://www.all-free-download.com).
+
 Thank you!
