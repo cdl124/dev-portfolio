@@ -8,10 +8,13 @@
   .logo-and-ham {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     .logo {
-      width: 50%;
+      font-family: 'Raleway', sans-serif;
+      color: $app-brown;
+      font-weight: 700;
+      font-size-adjust: auto;
     }
   }
 
@@ -20,15 +23,22 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+
     .logo {
-      height: 8em;
+      margin: 0.5em;
+      font-family: 'Raleway', sans-serif;
+      color: $app-brown;
+      font-size: 48px;
+      font-weight: 700;
     }
     ul {
       display: inline;
 
       li {
         display: inline;
-        margin: 1em;
+        margin: 0.5em;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 600;
         font-size: 2em;
       }
     }
@@ -40,13 +50,13 @@
 
 }
 
-@media (max-width: 460px) {
+@media (max-width: 629px) {
   .logo-and-list * {
     display: none;
   }
 }
 
-@media (min-width: 461px) {
+@media (min-width: 630px) {
   .logo-and-ham * {
     display: none;
   }
