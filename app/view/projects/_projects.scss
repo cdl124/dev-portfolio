@@ -2,11 +2,40 @@
 
 .projects {
 
-  .pjt {
+  .shapesnstuff, .restaurants {
     display: block;
     width: 100%;
-    margin-bottom: 10px;
-    overflow: visible;
+    height: 25%;
+
+    .shapesnstuff-text, .restaurants-text {
+      display: none;
+    }
+
+    .shapesnstuff:hover, .restaurants:hover {
+      visibility: hidden;
+      opacity: 0;
+      transition: visibility 0s 2s, opacity 2s linear;
+
+      .shapesnstuff-text, .restaurants-text {
+        visibility: visible;
+        opacity: 1;
+        transition: opacity 2s linear;
+      }
+    }
   }
-  
+
+  .shapesnstuff {
+    background-color: #FFEBCA;
+
+    h2 {
+      margin: auto;
+      text-align: center;
+      font-family: 'Oleo Script', cursive;
+      letter-spacing: -0.05em;
+      font-size: 6em;
+      color: #1AB58A;
+      text-shadow: -3px 1px #FF2151;
+
+    }
+  }
 }
