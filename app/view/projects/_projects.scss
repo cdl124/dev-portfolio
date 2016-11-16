@@ -4,7 +4,7 @@
 
   overflow: scroll;
 
-  .shapesnstuff, .restaurants {
+  .cover {
     position: absolute;
     margin: auto;
     top: 0;
@@ -14,12 +14,12 @@
     height: 10em;
     }
 
-    .shapesnstuff:hover, .restaurants:hover {
+    .cover:hover {
       transition: 0.5s linear all;
       opacity: 0;
     }
 
-    .shapesnstuff-text, .restaurants-text {
+    .shapesnstuff-text, .restaurants-text, .ramble-text {
       position: relative;
       display: inline-block;
       margin-top: 2em;
@@ -42,12 +42,23 @@
   }
 
   .restaurants {
-    background-color: skyblue;
+    background-color: #F2E1AC;
 
     .rf-logo {
+      color: #CD2C24;
       text-align: center;
       font-family: 'Lobster', cursive;
-      letter-spacing: -0.05em;
+      letter-spacing: -2.7px;
+      font-size: 6em;
+    }
+  }
+
+  .ramble {
+    background-color: beige;
+
+    .ramble-logo {
+      color: violet;
+      text-align: center;
       font-size: 6em;
     }
   }
