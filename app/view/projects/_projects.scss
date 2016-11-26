@@ -15,7 +15,11 @@
     height: 20%;
     }
 
-/* Shapesnstuff */
+    .pjt-logo {
+      padding-top: 0.1em;
+      font-size: 6em;
+      text-align: center;
+    }
 
     .shapesnstuff-text, .restaurants-text, .ramble-text {
       position: relative;
@@ -24,14 +28,14 @@
       width: 100%;
     }
 
+  /* Shapesnstuff */
+
     .shapesnstuff {
     background-color: #FFEBCA;
 
     .sns-logo {
-      text-align: center;
       font-family: 'Oleo Script', cursive;
       letter-spacing: -0.05em;
-      font-size: 6em;
       color: #1AB58A;
       text-shadow: -3px 1px #FF2151;
     }
@@ -44,10 +48,8 @@
 
     .rf-logo {
       color: #CD2C24;
-      text-align: center;
       font-family: 'Lobster', cursive;
       letter-spacing: -2.7px;
-      font-size: 6em;
     }
   }
 
@@ -58,9 +60,15 @@
 
     .ramble-logo {
       color: violet;
-      text-align: center;
       font-family: 'Arial', sans-serif;
-      font-size: 6em;
     }
   }
+}
+
+@media (max-width: 768px) {
+  .projects {
+  .pjt-logo {
+    font-size: 11vw;
+  }
+}
 }
