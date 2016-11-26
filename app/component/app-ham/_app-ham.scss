@@ -12,22 +12,25 @@
 
   .menu {
     position: fixed;
-    top: 10em;
+    display: inline-block;
+    top: 13em;
     left: 1em;
     width: 95%;
-    height: 100%;
-    background: $app-light;
+    background: $app-background;
     z-index: 99;
     box-shadow: 0px 7px 10px -2px rgba(0,0,0,0.6);
 
     ul {
-      margin-top: 50%;
       text-align: center;
       list-style-type: none;
 
       li {
-        font-size: 2em;
+        font-size: 3em;
         padding: 2em;
+
+        a {
+          color: $app-brown;
+        }
       }
     }
   }
