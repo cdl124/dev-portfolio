@@ -1,0 +1,36 @@
+@import "_theme";
+
+.home {
+  .hidden {
+    display: none;
+  }
+
+/* The following animation is from Animate.css! Link: https://github.com/daneden/animate.css */
+
+  @keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fadeInLeft {
+  animation-name: fadeInLeft;
+  animation-duration: 1s;
+  display: block;
+}
+
+span .fadeInLeft {
+  display: inline;
+}
+
+.visible {
+  // display: block;
+  font-size: 2.5em;
+}
+}

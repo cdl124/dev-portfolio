@@ -27,6 +27,10 @@ main, .home, .about, .projects {
     min-height: 100%;
     background-color: $app-background;
     padding-bottom: 2em;
+
+    p {
+      font-size: 2em;
+    }
   }
 }
 

@@ -1,10 +1,10 @@
-<main class="home">
+<main class="home" ng-controller="HomeController as homeCtrl">
   <div class="container">
-  <app-nav> </app-nav>
+    <app-nav> </app-nav>
 
-  <p class="hey">Hi there!</p>
-  <p class="good-to-see-you">It's good to see you here.</p>
-  <p class="links">Feel free to <a title="About" href="#/about">get to know me</a>, or <a title="Projects" href="#/projects">see what I've been up to</a>.</p>
-  <p class="have-fun">Have fun!</p>
+    <p><span class="hey hidden">Hi there!</span>
+    <span class="good-to-see-you hidden">It's good to see you here.</span></p>
+    <p class="links hidden">Feel free to <a title="About" href="#/about">get to know me</a>, or <a title="Projects" href="#/projects">see what I've been up to</a>.</p>
+    <p class="have-fun hidden">Have fun!</p>
   </div>
 </main>
