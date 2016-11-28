@@ -20,6 +20,8 @@ angular.module('cortFolio', [ngRoute])
   })
   .when('/home', {
     template: require('./view/home/home.html'),
+    controller: 'HomeController',
+    controllerAs: 'homeCtrl',
   })
   .otherwise({
     redirectTo: '/home',
