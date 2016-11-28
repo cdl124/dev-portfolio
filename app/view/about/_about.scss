@@ -1,8 +1,42 @@
 @import "_theme";
 
-.app-signin {
-  form {
-    padding: 10px;
-    background-color: $app-light;
+.about {
+
+  h1 {
+    margin-left: -999px;
+    margin-top: -1em;
+  }
+
+  p {
+    margin-bottom: 1.2em;
+    text-align: justify;
+  }
+
+  p[class="opening"] {
+    margin: 1em;
+    color: $app-green;
+    font-family: cursive;
+    text-align: center;
+    font-style: italic;
+    font-size: 3em;
+  }
+
+  a {
+    color: $app-brown;
+  }
+
+  a:hover {
+    color: $app-green;
+  }
+
+  .social-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 2em;
+
+    .fa {
+      font-size: 4em;
+    }
   }
 }
