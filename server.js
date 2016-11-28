@@ -8,7 +8,11 @@ const app = express();
 
 app.use(express.static(`${__dirname}/build`));
 
-let server = app.listen(port, (err) => {
+app.get('/', function(req, res) {
+  res.render('index');
+});
+
+app.listen(port, (err) => {
   if (err) throw err;
   console.log(`Server running on port: ${port}!`);
 });
