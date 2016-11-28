@@ -35,6 +35,14 @@
     ul {
       display: inline;
 
+      a {
+        color: $app-green;
+      }
+
+      a:hover {
+        color: $app-brown;
+      }
+
       li {
         display: inline;
         margin-right: 0.5em;

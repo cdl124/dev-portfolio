@@ -12,7 +12,7 @@
   .menu {
     position: fixed;
     display: inline-block;
-    top: 13em;
+    top: 14em;
     left: 1em;
     width: 95%;
     background: $app-background;
@@ -29,6 +29,9 @@
 
         a {
           color: $app-brown;
+        }
+        a:hover {
+          color: $app-green;
         }
       }
     }

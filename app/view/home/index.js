@@ -15,14 +15,14 @@ function HomeController($log) {
     function slideThisIn(pClass, delayTime) {
       setTimeout(function(){
         $(pClass).addClass('fadeInLeft');
-        $log.log('the animation ran technically');
+        $log.log('and then it animated!');
       }, delayTime);
     }
 
     slideThisIn('.hey', 1000);
     slideThisIn('.good-to-see-you', 2500);
-    slideThisIn('.links', 4000);
-    slideThisIn('.have-fun', 5500);
+    slideThisIn('.links', 4500);
+    slideThisIn('.have-fun', 6500);
   });
 
-}// end homecontroller
+}
