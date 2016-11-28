@@ -1,8 +1,97 @@
 @import "_theme";
 
-.app-signup {
-  form {
-    padding: 10px;
-    background-color: $app-light;
+.projects {
+
+  h1 {
+    margin-left: -999px;
+    margin-top: -1em;
+  }
+
+  .row {
+    margin: auto;
+  }
+
+  .cover {
+    margin: auto;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 20%;
+    box-shadow: 0px 7px 10px -2px rgba(0,0,0,0.6);
+    }
+
+    .pjt-logo {
+      margin-top: 0em;
+      font-size: 6em;
+      text-align: center;
+    }
+
+    .shapesnstuff-text, .restaurants-text, .ramble-text {
+      position: relative;
+      margin-top: 2em;
+      height: 20%;
+      width: 100%;
+    }
+
+    .tools {
+      font-weight: bolder;
+    }
+
+  /* Shapesnstuff */
+
+    .shapesnstuff {
+    background-color: #FFEBCA;
+
+    .sns-logo {
+      font-family: 'Oleo Script', cursive;
+      letter-spacing: -0.05em;
+      color: #1AB58A;
+      text-shadow: -3px 1px #FF2151;
+    }
+
+    a:hover {
+      color: #1AB58A;
+    }
+  }
+
+/* Restaurant Finder */
+
+  .restaurants {
+    background-color: #F2E1AC;
+
+    .rf-logo {
+      color: #CD2C24;
+      font-family: 'Lobster', cursive;
+      letter-spacing: -2.7px;
+    }
+
+    a:hover {
+      color: #CD2C24;
+    }
+  }
+
+/* Ramble */
+
+  .ramble {
+    background-color: gainsboro;
+
+    .ramble-logo {
+      color: $app-light;
+      text-shadow: 2px 2px #cfb1ed;
+      font-family: 'Arial', sans-serif;
+    }
+
+    a:hover {
+      color: $app-light;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .projects {
+    .pjt-logo {
+      font-size: 11vw;
+    }
   }
 }
