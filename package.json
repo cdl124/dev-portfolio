@@ -1,8 +1,8 @@
 {
-  "name": "ng-template",
+  "name": "cortfolio",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Cortney's web development portfolio",
+  "main": "entry.js",
   "scripts": {
     "lint": "./node_modules/eslint/bin/eslint.js .",
     "watch": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot",
@@ -10,6 +10,11 @@
     "start": "node server.js",
     "heroku-postbuild": "node_modules/webpack/bin/webpack.js"
   },
+
+  "engines": {
+    "node": "4.4.3"
+  },
+
   "keywords": [],
   "author": "",
   "license": "ISC",
