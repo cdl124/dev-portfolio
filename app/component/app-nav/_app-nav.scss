@@ -5,68 +5,63 @@
   background-color: $app-light;
   box-shadow: 0px 7px 10px -2px rgba(0,0,0,0.6);
 
+  .container-fluid {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  }
+
   .logo {
-    margin: 2em;
+    max-width: 90%;
+    margin: 0.5em 0 0.5em 0;
+    font-size: 2em;
   }
 
-  .logo-and-ham {
+  .ham {
+    display: none;
+  }
+
+  .navlist {
+    margin: 0.5em;
+
+    li {
+      margin-right: 5vw;
+      margin-top: 1.5em;
+      max-width: 100%;
+      flex-wrap: wrap;
+      font-family: 'Raleway', sans-serif;
+      font-size: 2em;
+      font-weight: 700;
+      list-style: none;
+    }
+  }
+
+  .navlist, li {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: -1em;
-    align-items: center;
 
-    .logo {
-      margin-top: 3em;
-      height: 5em;
-    }
   }
-
-  .logo-and-list {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-
-    .logo {
-      height: 8em;
-    }
-
-    ul {
-      display: inline;
-
-      a {
-        color: $app-green;
-      }
-
-      a:hover {
-        color: $app-brown;
-      }
-
-      li {
-        display: inline;
-        margin-right: 0.5em;
-        font-family: 'Raleway', sans-serif;
-        font-weight: 600;
-        font-size: 2.7em;
-      }
-    }
-  }
-
-    a {
-      text-decoration: none;
-    }
 
 }
 
-@media (max-width: 767px) {
-  .logo-and-list * {
-    display: none;
-  }
-}
+@media only screen and (max-width: 768px) {
+  .app-nav {
 
-@media (min-width: 768px) {
-  .logo-and-ham * {
-    display: none;
+    .logo {
+      font-size: 1em;
+      max-width: 90%;
+    }
+
+    .ham, .logo {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+    .navlist {
+      display: none;
+    }
   }
 }
