@@ -12,20 +12,26 @@
   .menu {
     position: fixed;
     display: inline-block;
-    top: 14em;
+    top: 11em;
     left: 1em;
-    width: 95%;
+    right: 1em;
+    bottom: 1em;
     background: $app-background;
     z-index: 99;
     box-shadow: 0px 7px 10px -2px rgba(0,0,0,0.6);
 
     ul {
+      margin-top: 20%;
       text-align: center;
       list-style-type: none;
 
       li {
-        font-size: 3em;
-        padding: 2em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 2.5em;
+        // margin-top: 20%;
+        margin-bottom: 20%;
 
         a {
           color: $app-brown;
@@ -38,10 +44,15 @@
   }
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 425px) {
   .app-ham {
     .fa-bars {
-      font-size: 3em;
+      margin: 0.5em auto;
+      font-size: 3.5em;
+    }
+
+    .menu {
+      top: 8em;
     }
   }
 }
