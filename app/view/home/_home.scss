@@ -37,13 +37,9 @@
     color: $app-brown;
 
     .hey {
-      font-size: 6vh;
+      font-size: 10vh;
       font-family: 'Niconne', cursive;
       color: $app-green;
-    }
-
-    .good-to-see-you, .links, .have-fun {
-      font-size: 3vh;
     }
 
     a {
@@ -52,6 +48,16 @@
 
     a:hover {
       color: $app-green;
+    }
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .home {
+    .good-to-see-you,
+    .links,
+    .have-fun {
+      font-size: 3vh;
     }
   }
 }

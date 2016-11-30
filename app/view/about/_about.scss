@@ -13,7 +13,7 @@
   }
 
   p[class="opening"] {
-    margin: 1em;
+    margin: 0.5em;
     color: $app-green;
     font-family: 'Niconne', cursive;
     text-align: center;
@@ -27,6 +27,11 @@
 
   a:hover {
     color: $app-green;
+  }
+
+  .email {
+    text-align: center;
+    font-weight: bold;
   }
 
   .social-icons {

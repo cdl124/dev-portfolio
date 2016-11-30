@@ -4,6 +4,7 @@
 
   .fa-bars {
     margin-top: 1em;
+    color: $app-green;
     z-index: 100;
     font-size: 4em;
   }
@@ -52,7 +53,7 @@
     }
 
     .menu {
-      top: 8em;
+      top: 9em;
     }
   }
 }
