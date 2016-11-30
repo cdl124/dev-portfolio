@@ -32,15 +32,18 @@
   }
 
   p {
-    font-size: 3em;
     text-align: center;
-    margin-bottom: 7vh;
+    margin-bottom: 5vh;
     color: $app-brown;
 
     .hey {
-      font-size: 4em;
+      font-size: 6vh;
       font-family: 'Niconne', cursive;
       color: $app-green;
+    }
+
+    .good-to-see-you, .links, .have-fun {
+      font-size: 3vh;
     }
 
     a {
