@@ -3,29 +3,36 @@
 .app-ham {
 
   .fa-bars {
-    margin-right: 0.1em;
-    margin-top: 0.3em;
+    margin-top: 1em;
+    color: $app-green;
     z-index: 100;
-    font-size: 6em;
+    font-size: 4em;
   }
 
   .menu {
     position: fixed;
     display: inline-block;
-    top: 14em;
+    top: 11em;
     left: 1em;
-    width: 95%;
+    right: 1em;
+    bottom: 1em;
     background: $app-background;
     z-index: 99;
     box-shadow: 0px 7px 10px -2px rgba(0,0,0,0.6);
 
     ul {
+      width: 100%;
+      margin-top: 20%;
+      padding: 1em;
       text-align: center;
       list-style-type: none;
 
       li {
-        font-size: 3em;
-        padding: 2em;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        font-size: 10vw;
+        margin-bottom: 25%;
 
         a {
           color: $app-brown;
@@ -34,6 +41,19 @@
           color: $app-green;
         }
       }
+    }
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .app-ham {
+    .fa-bars {
+      margin: 0.6em auto;
+      font-size: 3.5em;
+    }
+
+    .menu {
+      top: 9em;
     }
   }
 }
