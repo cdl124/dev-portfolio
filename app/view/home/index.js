@@ -8,14 +8,10 @@ angular.module('cortFolio')
 .controller('HomeController', ['$log', HomeController]);
 
 function HomeController($log) {
-
   $(document).ready(function() {
-    $log.log('it loaded');
-
     function slideThisIn(pClass, delayTime) {
       setTimeout(function(){
         $(pClass).addClass('fadeInLeft');
-        $log.log('and then it animated!');
       }, delayTime);
     }
 
