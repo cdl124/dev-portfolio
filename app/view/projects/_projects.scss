@@ -27,7 +27,7 @@
       text-align: center;
     }
 
-    .shapesnstuff-text, .restaurants-text, .ramble-text {
+    .shapesnstuff-text, .restaurants-text, .ramble-text, .cweb-text {
       position: relative;
       margin-top: 2em;
       height: 20%;
@@ -84,6 +84,18 @@
 
     a:hover {
       color: $app-light;
+    }
+  }
+
+  /* Various custom website beautification projects */
+
+  .cwebs {
+
+    text-align: justify;
+    
+    .cweb-logo {
+      display: inline-block;
+      font-size: 3em;
     }
   }
 }
