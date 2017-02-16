@@ -92,12 +92,17 @@
   .cwebs {
 
     font-family: 'Cutive Mono', monospace;
-    // font-weight: bold;
     text-align: center;
 
     .cweb-logo {
       display: inline-block;
       font-size: 3em;
+      a {
+      color: linear-gradient(to right, rgba(229,157,236,1) 0%, rgba(192,233,155,1) 100%); }
+
+      a:hover {
+        color: rgba(229,157,236,1);
+      }
     }
   }
 }
