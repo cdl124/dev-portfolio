@@ -91,26 +91,30 @@
 
   .cwebs {
 
-    font-family: 'Cutive Mono', monospace;
-    text-align: center;
-
     .cweb-logo {
-      display: inline-block;
-      font-size: 3em;
-      a {
-      color: linear-gradient(to right, rgba(229,157,236,1) 0%, rgba(192,233,155,1) 100%); }
 
-      a:hover {
-        color: rgba(229,157,236,1);
+      font-family: 'Cutive Mono', monospace;
+      text-align: center;
+      font-size: 3.5em;
+
+      a { color: $app-brown;
+        border-bottom: 1px dashed $app-brown;
       }
+
+      a:hover { color: $app-green; }
+
     }
   }
 }
 
 @media (max-width: 768px) {
   .projects {
-    .pjt-logo {
-      font-size: 11vw;
+
+    .pjt-logo { font-size: 11vw; }
+
+    .cwebs {
+      .cweb-logo { font-size: 6vw; }
+
     }
   }
 }
