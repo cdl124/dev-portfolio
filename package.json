@@ -11,7 +11,7 @@
     "heroku-postbuild": "node_modules/webpack/bin/webpack.js"
   },
   "engines": {
-    "node": "4.4.3"
+    "node": "7.10.1"
   },
   "keywords": [],
   "author": "",
@@ -32,6 +32,7 @@
     "jquery": "^3.1.1",
     "node-sass": "^3.8.0",
     "postcss-loader": "^0.9.1",
+    "pug": "^2.0.0-beta11",
     "sass-loader": "^4.0.0",
     "style-loader": "^0.13.1",
     "url-loader": "^0.5.7",
